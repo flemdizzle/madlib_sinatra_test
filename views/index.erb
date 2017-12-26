@@ -1,0 +1,9 @@
+<h1>Hello World</h1>
+<form action='/mad_lib_answers' method='get'>
+
+  <% @names.each do |name| %>
+    <%= name %>: <input type="text" name=<%= name %>><br>
+  <% end %>
+
+  <input type='submit' value='Submit'>
+</form>
