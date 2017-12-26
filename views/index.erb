@@ -3,7 +3,9 @@
 
   <% @names.each do |name| %>
     <%= name %>: <input type="text" name=<%= name %>><br>
+
   <% end %>
+  <input type='hidden' value=<%= @mad_lib_name %> name='mad_lib_name'>
 
   <input type='submit' value='Submit'>
 </form>

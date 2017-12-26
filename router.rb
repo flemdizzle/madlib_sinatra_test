@@ -3,6 +3,7 @@ load 'config.rb'
 
 get '/' do
   @names = NameLogic.new.name_array
+  @mad_lib_name = 'ruby_5'
   erb :index
 end
 
